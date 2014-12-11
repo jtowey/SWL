@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jc2e.bestgift.ui.MainActivity" >
+
+
+    <item android:id="@+id/action_view_list"
+        android:title="@string/action_view_list"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_view_as_list"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_new_wish"
+        android:title="@string/action_new_wish"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_new"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_logout"
+        android:title="@string/action_logout"
+        android:icon="@drawable/ic_action_secure"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+    <item android:id="@+id/action_camera"
+        android:title="@string/action_camera_label"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_camera"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_websearch"
+        android:title="@string/action_websearch"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_edit_friends"
+        android:title="@string/action_edit_friends"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

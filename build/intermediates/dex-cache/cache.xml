@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\build\intermediates\pre-dexed\debug\Parse-1.5.1-30c8b530ed99d6e962b585f6363c1966d51f57e1.jar"
+        jar="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\libs\Parse-1.5.1.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="3d645417e7780d44f32e29a3ec6b729b75aef26c"/>
+    <item
+        dex="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\build\intermediates\pre-dexed\debug\android-support-v13-42d12f8466481bb9e343d4ef0e15b9b0c73e95f7.jar"
+        jar="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\libs\v13\android-support-v13.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="41c6fb0537e463f685d3235fc50d38dc540d6ece"/>
+    <item
+        dex="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\build\intermediates\pre-dexed\debug\Parse-1.5.1-30c8b530ed99d6e962b585f6363c1966d51f57e1.jar"
+        jar="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\libs\Parse-1.5.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3d645417e7780d44f32e29a3ec6b729b75aef26c"/>
+    <item
+        dex="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\build\intermediates\pre-dexed\debug\android-support-v13-42d12f8466481bb9e343d4ef0e15b9b0c73e95f7.jar"
+        jar="C:\Users\Jtowey\AndroidStudioProjects\BestGift\ui\libs\v13\android-support-v13.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="41c6fb0537e463f685d3235fc50d38dc540d6ece"/>
+
+</pre-dex-items>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jc2e.bestgift.ui" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="com.jc2e.bestgift.ui.BestGiftApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_bestgift"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.jc2e.bestgift.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jc2e.bestgift.ui.frontend.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jc2e.bestgift.ui.frontend.SignupActivity"
+            android:label="@string/title_activity_signup"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jc2e.bestgift.ui.frontend.ForgotActivity"
+            android:label="@string/title_activity_forgot"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+
+        <fragment
+            android:name=".NavigationDrawerFragment"
+            android:label="@string/title_fragment_nav_drawer"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </fragment>
+        <fragment
+            android:name=".FriendsFragment"
+            android:label="@string/title_fragment_friends"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </fragment>
+
+        <activity
+            android:name="com.jc2e.bestgift.ui.EditFriendsActivity"
+            android:label="@string/title_activity_edit_friends"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jc2e.bestgift.ui.NewWishActvity"
+            android:label="@string/title_activity_new_wish_actvity"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.jc2e.bestgift.ui.UserListActivity"
+            android:label="@string/title_activity_user_list"
+            android:parentActivityName="com.jc2e.bestgift.ui.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jc2e.bestgift.ui.NewWishActvity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add a wish"
+        android:id="@+id/labelNewWish"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wish Name:"
+        android:id="@+id/labelWishName"
+        android:layout_below="@+id/labelNewWish"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editWishName"
+        android:layout_below="@+id/labelNewWish"
+        android:layout_toEndOf="@+id/labelWishName" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price(Approx):"
+        android:id="@+id/labelPrice"
+        android:layout_toStartOf="@+id/editWishName"
+        android:textSize="20sp"
+        android:layout_below="@+id/editWishDesc"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:layout_alignEnd="@+id/labelNewWish" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editPrice"
+        android:layout_toEndOf="@+id/labelPrice"
+        android:layout_below="@+id/editWishDesc"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item #:"
+        android:id="@+id/labelItemNum"
+        android:layout_below="@+id/labelPrice"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:layout_alignBaseline="@+id/editItemNum"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editItemNum"
+        android:layout_below="@+id/editPrice"
+        android:layout_toEndOf="@+id/labelItemNum"
+        android:layout_alignStart="@id/editPrice"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qty:"
+        android:id="@+id/labelQty"
+        android:layout_toEndOf="@+id/editItemNum"
+        android:textSize="20sp"
+        android:layout_below="@+id/editItemNum"
+        android:layout_alignStart="@+id/labelNewWish" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editQty"
+        android:layout_toEndOf="@+id/labelQty"
+        android:layout_below="@+id/editItemNum"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@id/editItemNum" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Size:"
+        android:id="@+id/labelSize"
+        android:layout_toStartOf="@+id/editWishName"
+        android:layout_below="@+id/editQty"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:layout_alignBaseline="@+id/editSize"
+        android:textSize="20sp"
+        android:layout_alignParentEnd="false" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editSize"
+        android:layout_below="@+id/editQty"
+        android:layout_toEndOf="@+id/labelSize"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@id/editQty" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Color:"
+        android:id="@+id/labelColor"
+        android:layout_below="@+id/labelSize"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:layout_alignBaseline="@+id/editColor"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editColor"
+        android:layout_alignStart="@+id/editPrice"
+        android:layout_below="@id/editSize"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location:"
+        android:id="@+id/labelWishLoc"
+        android:layout_below="@+id/labelColor"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:layout_alignBaseline="@+id/editWishLoc"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editWishLoc"
+        android:layout_below="@+id/editColor"
+        android:layout_alignStart="@+id/editPrice"
+        android:layout_toEndOf="@+id/labelWishLoc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wish Description:"
+        android:id="@+id/labelWishDesc"
+        android:layout_below="@+id/editWishName"
+        android:layout_alignStart="@+id/labelNewWish"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editWishDesc"
+        android:layout_alignTop="@+id/labelWishDesc"
+        android:layout_toEndOf="@+id/labelWishDesc"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/layout/activity_new_wish.xml -->

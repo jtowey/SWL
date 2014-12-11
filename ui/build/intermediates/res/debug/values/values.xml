@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="camera_choices">
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Choose Picture</item>
+        <item>Choose Video</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_people</item>
+        <item>@drawable/ic_photos</item>
+        <item>@drawable/ic_communities</item>
+        <item>@drawable/ic_pages</item>
+        <item>@drawable/ic_whats_hot</item>
+    </array>
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Find People</item>
+        <item>Profile</item>
+        <item>Communities</item>
+        <item>Friends</item>
+        <item>Lists</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/color.xml -->
+    <eat-comment/>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="list_divider">#272727</color>
+    <color name="list_item_title">#fff</color>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/refs.xml -->
+    <eat-comment/>
+    <item name="fragment_friends" type="layout">@layout/fragment_friends_list</item>
+    <item name="fragment_listsfragment" type="layout">@layout/fragment_listsfragment_list</item>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="action_camera_label">Capture Photo</string>
+    <string name="action_edit_friends">Edit Friends</string>
+    <string name="action_logout">Logout</string>
+    <string name="action_new_wish">New Wish</string>
+    <string name="action_save">Save</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_view_list">View Your List</string>
+    <string name="action_websearch">Web Search</string>
+    <string name="app_name">Best Gift</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawer_close">Close</string>
+    <string name="drawer_open">Open</string>
+    <string name="email_hint">Email</string>
+    <string name="error_birthday">"Please enter you birth day."</string>
+    <string name="error_external_storage">There was a problem accessing you\'re devices external storage.</string>
+    <string name="error_file_size_too_large">The selected file was too large. Select a new file.</string>
+    <string name="error_title">We\'re sorry!</string>
+    <string name="forgot_complete">We\'ve sent an email to your address with a link to reset your password.</string>
+    <string name="forgot_complete_title">Check your email</string>
+    <string name="forgot_error_message">Please make sure you enter your email address.</string>
+    <string name="forgot_error_title">Oops!</string>
+    <string name="forgot_field_hint">Enter your email address</string>
+    <string name="forgot_password_label">Forgot your password?</string>
+    <string name="forgot_reset_error_message">Something went wrong. Please try again.</string>
+    <string name="general_error">Sorry, there was an error!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_connection_fragment">Hello Connection fragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_error_message">Please make sure you enter a username and password.</string>
+    <string name="login_error_title">Oops!</string>
+    <string name="login_label">Log in</string>
+    <string name="no_friends">Add some friends!</string>
+    <string name="password_hint">Password</string>
+    <string name="reset_password">Send Reset Request</string>
+    <string name="sign_up_button_label">Sign up</string>
+    <string name="signup_error_message">Please make sure you enter a username, email, password, and birthdate.</string>
+    <string name="signup_error_title">Oops!</string>
+    <string name="signup_text">Sign up!</string>
+    <string name="title_activity_edit_friends">EditFriendsActivity</string>
+    <string name="title_activity_forgot">Forgot Password</string>
+    <string name="title_activity_fragment">FragmentActivity</string>
+    <string name="title_activity_list_item">ListItem</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_new_wish_actvity">NewWishActvity</string>
+    <string name="title_activity_signup">Signup</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_user_list">UserListActivity</string>
+    <string name="title_fragment_friends">Friends</string>
+    <string name="title_fragment_nav_drawer">Nav Drawer</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Friends</string>
+    <string name="title_section3">Connections</string>
+    <string name="title_section4">Preferences</string>
+    <string name="username_hint">Username</string>
+    <string name="video_file_size_warning">The selected video must be less than 10 MB.</string>
+    <!-- From: file:/C:/Users/Jtowey/AndroidStudioProjects/BestGift/ui/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
