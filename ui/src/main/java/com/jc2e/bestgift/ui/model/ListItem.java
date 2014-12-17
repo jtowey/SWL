@@ -16,6 +16,7 @@ public class ListItem extends ParseObject {
     public ListItem() {}
 
     private String itemId;
+    private String listId;
     private Integer itemNum;
     private String itemName;
     private String itemDesc;
@@ -31,6 +32,14 @@ public class ListItem extends ParseObject {
 
     public void setItemId(String itemId) {
         this.itemId = itemId;
+    }
+
+    public String getListId() {
+        return listId;
+    }
+
+    public void setListId(String listId) {
+        this.listId = listId;
     }
 
     public Integer getItemNum() {
@@ -96,7 +105,6 @@ public class ListItem extends ParseObject {
     public void setItemColor(String itemColor) {
         this.itemColor = itemColor;
     }
-
 
 
 }

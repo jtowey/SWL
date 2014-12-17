@@ -83,7 +83,7 @@ public class SignupActivity extends Activity {
                     setProgressBarIndeterminateVisibility(true);
 
                     final ParseObject list = new ParseObject(ParseConstants.CLASS_LISTS);
-                    list.put(ParseConstants.KEY_LIST_OWNER_NAME, username);
+                    list.put(ParseConstants.KEY_LIST_OWNER_NAME, username); // TODO Change to email
                     list.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {

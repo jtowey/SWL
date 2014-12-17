@@ -51,13 +51,12 @@ public class NewWishActivity extends Activity {
         int id = item.getItemId();
         if (id == R.id.action_save) {
             debug();
-            createListItem();
+//            createListItem();
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
 
-    //    protected ParseObject createList() {
     protected void debug() {
         String listId = mListId;
         Log.d(TAG, listId);
