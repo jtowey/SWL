@@ -10,9 +10,9 @@ import com.jc2e.bestgift.ui.model.ListItem;
 import com.parse.ParseUser;
 
 
-public class NewWishActvity extends Activity {
+public class NewWishActivity extends Activity {
 
-    public static final String TAG = EditFriendsActivity.class.getSimpleName();
+    public static final String TAG = NewWishActivity.class.getSimpleName();
 
     protected String mListId;
     protected String mUserName;

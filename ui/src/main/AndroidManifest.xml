@@ -83,7 +83,7 @@
                 android:value="com.jc2e.bestgift.ui.MainActivity" />
         </activity>
         <activity
-            android:name="com.jc2e.bestgift.ui.NewWishActvity"
+            android:name=".NewWishActivity"
             android:label="@string/title_activity_new_wish_actvity"
             android:parentActivityName="com.jc2e.bestgift.ui.MainActivity" >
             <meta-data

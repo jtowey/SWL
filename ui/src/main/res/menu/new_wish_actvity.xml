@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.jc2e.bestgift.ui.NewWishActvity" >
+    tools:context="com.jc2e.bestgift.ui.NewWishActivity" >
     <item android:id="@+id/action_save"
         android:title="@string/action_save"
         android:icon="@drawable/ic_action_save"

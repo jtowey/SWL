@@ -319,7 +319,7 @@ public class MainActivity extends Activity {
                 startActivity(viewListIntent);
                 return true;
             case R.id.action_new_wish:
-                Intent newWishIntent = new Intent(this, NewWishActvity.class);
+                Intent newWishIntent = new Intent(this, NewWishActivity.class);
                 startActivity(newWishIntent);
                 return true;
             case R.id.action_logout:

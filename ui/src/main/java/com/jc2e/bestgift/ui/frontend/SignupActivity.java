@@ -11,10 +11,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.jc2e.bestgift.ui.MainActivity;
-import com.jc2e.bestgift.ui.NewWishActvity;
 import com.jc2e.bestgift.ui.ParseConstants;
 import com.jc2e.bestgift.ui.R;
 import com.parse.ParseException;
