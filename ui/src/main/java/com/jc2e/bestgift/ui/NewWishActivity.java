@@ -63,10 +63,8 @@ public class NewWishActivity extends Activity {
     }
 
     protected ListItem createListItem() {
-        ListItem listItem = new ListItem() {
-
-
+        ListItem newListItem = new ListItem() {
         };
-        return listItem;
+        return newListItem;
     }
 }

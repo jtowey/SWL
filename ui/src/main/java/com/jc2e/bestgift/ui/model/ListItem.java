@@ -1,19 +1,12 @@
 package com.jc2e.bestgift.ui.model;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.util.Log;
 
-import com.jc2e.bestgift.ui.ParseConstants;
-import com.jc2e.bestgift.ui.R;
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
-@ParseClassName(ParseConstants.CLASS_LIST_ITEMS)
+@ParseClassName("ListItem")
 public class ListItem extends ParseObject {
-
-    public ListItem() {}
 
     private String itemId;
     private String listId;
@@ -26,6 +19,9 @@ public class ListItem extends ParseObject {
     private String itemSize;
     private String itemColor;
 
+//    public ListItem() {
+//    }
+
     public String getItemId() {
         return itemId;
     }
@@ -35,11 +31,15 @@ public class ListItem extends ParseObject {
     }
 
     public String getListId() {
+        getString("listId");
+        Log.d("ListItem.class:", listId);
         return listId;
     }
 
     public void setListId(String listId) {
+
         this.listId = listId;
+        put("listId", listId);
     }
 
     public Integer getItemNum() {

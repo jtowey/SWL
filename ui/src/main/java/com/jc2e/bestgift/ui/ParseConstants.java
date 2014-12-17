@@ -4,6 +4,9 @@ package com.jc2e.bestgift.ui;
  * Created by Jtowey on 9/11/2014.
  */
 public final class ParseConstants {
+    // Global
+    public static final String PARSE_APPLICATION_ID = "81fP2TR7zvJer8MzOGFvbbcYqqqm0E3dM2LYqPZX";
+    public static final String PARSE_CLIENT_KEY = "AjJ52wLgtJfWQ0bWTmHPR12KAHfe18rth5civK5b";
     // Class names
     public static final String CLASS_LISTS = "Lists";
     public static final String CLASS_LIST_ITEMS = "ListItems";
