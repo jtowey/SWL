@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.jc2e.bestgift.ui.model.ListItem;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 
@@ -62,9 +63,9 @@ public class NewWishActivity extends Activity {
         Log.d(TAG, listId);
     }
 
-    protected ListItem createListItem() {
-        ListItem newListItem = new ListItem() {
+    protected ParseObject createListItem() {
+        final ListItem newListItem = new ListItem() {
         };
-        return newListItem;
+        return null;
     }
 }

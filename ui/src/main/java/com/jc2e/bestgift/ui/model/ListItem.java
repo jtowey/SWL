@@ -5,7 +5,6 @@ import android.util.Log;
 import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
-@ParseClassName("ListItem")
 public class ListItem extends ParseObject {
 
     private String itemId;
@@ -31,7 +30,6 @@ public class ListItem extends ParseObject {
     }
 
     public String getListId() {
-        getString("listId");
         Log.d("ListItem.class:", listId);
         return listId;
     }
@@ -39,7 +37,6 @@ public class ListItem extends ParseObject {
     public void setListId(String listId) {
 
         this.listId = listId;
-        put("listId", listId);
     }
 
     public Integer getItemNum() {

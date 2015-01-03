@@ -9,7 +9,7 @@ public final class ParseConstants {
     public static final String PARSE_CLIENT_KEY = "AjJ52wLgtJfWQ0bWTmHPR12KAHfe18rth5civK5b";
     // Class names
     public static final String CLASS_LISTS = "Lists";
-    public static final String CLASS_LIST_ITEMS = "ListItems";
+    public static final String CLASS_LIST_ITEMS = "ListItem";
 
     // Field names
     public static final String KEY_USERNAME = "username";

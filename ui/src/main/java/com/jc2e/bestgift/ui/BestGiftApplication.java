@@ -15,7 +15,6 @@ public class BestGiftApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
-        ParseObject.registerSubclass(ListItem.class);
         Parse.initialize(this, ParseConstants.PARSE_APPLICATION_ID, ParseConstants.PARSE_CLIENT_KEY);
 
 /*        ParseUser.enableAutomaticUser();
