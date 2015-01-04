@@ -52,7 +52,7 @@
     <string name="title_section2">Friends</string>
     <string name="title_section3">Connections</string>
     <string name="title_section4">Preferences</string>
-    Front-end            <string name="username_hint">Username</string>
+    <string name="username_hint">Public Name</string>
     <string name="password_hint">Password</string>
     <string name="email_hint">Email</string>
     <string name="login_label">Log in</string>

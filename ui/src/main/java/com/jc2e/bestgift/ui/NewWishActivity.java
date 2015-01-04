@@ -19,7 +19,8 @@ public class NewWishActivity extends Activity {
     protected String mUserName;
 
     protected ParseUser mCurrentUser;
-//    protected ParseObject mUserList;
+    protected ParseObject mUserList;
+    protected String mEmail;
 
     protected MenuItem mSaveListItem;
 
@@ -32,6 +33,7 @@ public class NewWishActivity extends Activity {
         mUserName = mCurrentUser.getUsername();
 
         mListId = mCurrentUser.get(ParseConstants.KEY_LIST_RELATION).toString();
+        mEmail = mCurrentUser.getEmail().toString();
 
     }
 
@@ -52,7 +54,7 @@ public class NewWishActivity extends Activity {
         int id = item.getItemId();
         if (id == R.id.action_save) {
             debug();
-//            createListItem();
+            createListItem();
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -63,9 +65,9 @@ public class NewWishActivity extends Activity {
         Log.d(TAG, listId);
     }
 
-    protected ParseObject createListItem() {
-        final ListItem newListItem = new ListItem() {
-        };
-        return null;
+    protected void createListItem() {
+        ParseObject listItem = new ParseObject(ParseConstants.CLASS_LIST_ITEMS);
+            listItem.put(ParseConstants.KEY_LIST_OWNER_ID, mCurrentUser.getObjectId());
+            listItem.put(ParseConstants.KEY_LIST_OWNER_EMAIL, mEmail);
     }
 }

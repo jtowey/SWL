@@ -13,11 +13,13 @@ public final class ParseConstants {
 
     // Field names
     public static final String KEY_USERNAME = "username";
+    public static final String KEY_PUBLIC_NAME = "publicName";
     public static final String KEY_FRIENDS_RELATION = "friendsRelation";
     public static final String KEY_LIST_RELATION = "listRelation";
     public static final String KEY_BIRTHDATE = "birthdate";
 
     // List field names
+    public static final String KEY_LIST_OWNER_EMAIL = "ownerEmail";
     public static final String KEY_LIST_OWNER_NAME = "owner";
     public static final String KEY_LIST_OWNER_ID = "ownerID";
 

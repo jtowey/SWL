@@ -83,7 +83,8 @@ public class SignupActivity extends Activity {
                     setProgressBarIndeterminateVisibility(true);
 
                     final ParseObject list = new ParseObject(ParseConstants.CLASS_LISTS);
-                    list.put(ParseConstants.KEY_LIST_OWNER_NAME, username); // TODO Change to email
+                    list.put(ParseConstants.KEY_LIST_OWNER_EMAIL, email);
+                    list.put(ParseConstants.KEY_LIST_OWNER_NAME, username);
                     list.saveInBackground(new SaveCallback() {
                         @Override
                         public void done(ParseException e) {
@@ -100,6 +101,7 @@ public class SignupActivity extends Activity {
                     newUser.setUsername(username);
                     newUser.setPassword(password);
                     newUser.setEmail(email);
+                    newUser.put(ParseConstants.KEY_PUBLIC_NAME, username);
                     newUser.put(ParseConstants.KEY_BIRTHDATE, birthDate);
                     newUser.signUpInBackground(new SignUpCallback() {
                         @Override
