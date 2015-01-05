@@ -1,20 +1,32 @@
 package com.jc2e.bestgift.ui;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.Window;
+import android.widget.ArrayAdapter;
 import android.widget.Toast;
 
+import com.parse.FindCallback;
+import com.parse.ParseClassName;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
-public class UserListActivity extends Activity {
+import java.util.List;
+
+public class UserListActivity extends ListActivity {
 
     public static final String TAG = UserListActivity.class.getSimpleName();
 
     protected ParseUser mCurrentUser;
+    protected List<ParseObject> mItems;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,44 +39,43 @@ public class UserListActivity extends Activity {
 
         setProgressBarIndeterminateVisibility(true);
 
-        // TODO convert to list items
-//        ParseQuery<ParseUser> query = ParseUser.getQuery();
-//        query.orderByAscending(ParseConstants.KEY_USERNAME);
-//        query.setLimit(1000);
-//        query.findInBackground(new FindCallback<ParseUser>() {
-//
-//            public void done(List<ParseUser> users, ParseException e) {
-//
-//                setProgressBarIndeterminateVisibility(false);
-//
-//                if (e == null) {
-//                    // Success
-//                    mUsers = users;
-//                    String[] usernames = new String[mUsers.size()];
-//                    int i = 0;
-//                    for (ParseUser user : mUsers) {
-//                        usernames[i] = user.getUsername();
-//                        i++;
-//                    }
-//                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(UserListActivity.this,
-//                            android.R.layout.simple_list_item_checked,
-//                            usernames);
-//                    setListAdapter(adapter);
-//
-//                    addFriendCheckmarks();
-//
-//                } else {
-//                    Log.e(TAG, e.getMessage());
-//                    AlertDialog.Builder builder = new AlertDialog.Builder(UserListActivity.this);
-//                    builder.setMessage(e.getMessage())
-//                            .setTitle(R.string.error_title)
-//                            .setPositiveButton(android.R.string.ok, null);
-//
-//                    AlertDialog dialog = builder.create();
-//                    dialog.show();
-//                }
-//            }
-//        });
+//        TODO convert to list items
+        ParseQuery<ParseObject> query = ParseQuery.getQuery(ParseConstants.CLASS_LIST_ITEM);
+        query.whereEqualTo(ParseConstants.KEY_LIST_OWNER_ID, mCurrentUser.getObjectId());
+        query.setLimit(12);
+        query.findInBackground(new FindCallback<ParseObject>() {
+
+            public void done(List<ParseObject> items, ParseException e) {
+
+                setProgressBarIndeterminateVisibility(false);
+
+                if (e == null) {
+                    // Success
+                    mItems = items;
+                    String[] listItems = new String[mItems.size()];
+                    int i = 0;
+                    for (ParseObject item : mItems) {
+                        listItems[i] = item.getString(ParseConstants.KEY_ITEM_NAME);
+                        i++;
+                    }
+                    ArrayAdapter<String> adapter = new ArrayAdapter<String>(UserListActivity.this,
+                            android.R.layout.simple_expandable_list_item_1,
+                            listItems);
+                    setListAdapter(adapter);
+
+
+                } else {
+                    Log.e(TAG, e.getMessage());
+                    AlertDialog.Builder builder = new AlertDialog.Builder(UserListActivity.this);
+                    builder.setMessage(e.getMessage())
+                            .setTitle(R.string.error_title)
+                            .setPositiveButton(android.R.string.ok, null);
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+                }
+            }
+        });
         Toast.makeText(this, "This activity is under construction", Toast.LENGTH_LONG).show();
     }
 

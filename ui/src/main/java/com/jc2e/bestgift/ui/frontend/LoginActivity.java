@@ -13,11 +13,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.jc2e.bestgift.ui.MainActivity;
-import com.jc2e.bestgift.ui.ParseConstants;
 import com.jc2e.bestgift.ui.R;
 import com.parse.LogInCallback;
 import com.parse.ParseException;
-import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 
@@ -28,7 +26,7 @@ public class LoginActivity extends Activity {
 
     protected EditText mUsername;
     protected EditText mPassword;
-    protected String mEmail;
+//    protected EditText mEmail;
     protected Button mLoginButton;
 
 
@@ -41,8 +39,8 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
 
+//        mEmail = (EditText) findViewById(R.id.usernameField);
         mUsername = (EditText) findViewById(R.id.usernameField);
-        mEmail = mUsername.toString();
         mPassword = (EditText) findViewById(R.id.passwordField);
         mLoginButton = (Button) findViewById(R.id.loginButton);
 
@@ -68,10 +66,12 @@ public class LoginActivity extends Activity {
             }
         });
 
+
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = mEmail;    // TODO Verify email login process
+                String username = mUsername.getText().toString().trim();   // TODO Change to Email instead of username
+//                String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
                 // Check if user fields have been filled out.

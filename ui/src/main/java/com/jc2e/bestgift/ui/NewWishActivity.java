@@ -5,8 +5,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.EditText;
 
-import com.jc2e.bestgift.ui.model.ListItem;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
 
@@ -24,6 +24,18 @@ public class NewWishActivity extends Activity {
 
     protected MenuItem mSaveListItem;
 
+    // List item fields
+    private String mItemId;
+    private String mItemNum;
+    private EditText mItemName;
+    private EditText mItemDesc;
+    private EditText mItemPrice;
+    private EditText mItemCatNum;
+    private EditText mItemQty;
+    private EditText mItemSize;
+    private EditText mItemColor;
+    private String mListItemId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,12 +43,18 @@ public class NewWishActivity extends Activity {
 
         mCurrentUser = ParseUser.getCurrentUser();
         mUserName = mCurrentUser.getUsername();
+        mEmail = mCurrentUser.getEmail();
 
         mListId = mCurrentUser.get(ParseConstants.KEY_LIST_RELATION).toString();
-        mEmail = mCurrentUser.getEmail().toString();
-
+        mItemNum = null;
+        mItemName = (EditText) findViewById(R.id.editWishName);
+        mItemDesc = (EditText) findViewById(R.id.editWishDesc);
+        mItemPrice = (EditText) findViewById(R.id.editPrice);
+        mItemCatNum = (EditText) findViewById(R.id.editItemNum);
+        mItemQty = (EditText) findViewById(R.id.editQty);
+        mItemSize = (EditText) findViewById(R.id.editSize);
+        mItemColor = (EditText) findViewById(R.id.editColor);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -66,8 +84,28 @@ public class NewWishActivity extends Activity {
     }
 
     protected void createListItem() {
-        ParseObject listItem = new ParseObject(ParseConstants.CLASS_LIST_ITEMS);
+
+        String mListId = mCurrentUser.get(ParseConstants.KEY_LIST_RELATION).toString();
+//        String itemNum = getListItemId();
+        String itemName = mItemName.getText().toString().trim();
+        String itemDesc = mItemDesc.getText().toString().trim();
+        String itemPrice = mItemPrice.getText().toString().trim();
+        String itemCatNum = mItemCatNum.getText().toString().trim();
+        String itemQty = mItemQty.getText().toString().trim();
+        String itemSize = mItemSize.getText().toString().trim();
+        String itemColor = mItemColor.getText().toString().trim();
+
+        ParseObject listItem = new ParseObject(ParseConstants.CLASS_LIST_ITEM);
             listItem.put(ParseConstants.KEY_LIST_OWNER_ID, mCurrentUser.getObjectId());
             listItem.put(ParseConstants.KEY_LIST_OWNER_EMAIL, mEmail);
+            listItem.put(ParseConstants.KEY_ITEM_NAME, itemName);
+            listItem.put(ParseConstants.KEY_ITEM_DESC, itemDesc);
+            listItem.put(ParseConstants.KEY_ITEM_PRICE, itemPrice);
+            listItem.put(ParseConstants.KEY_ITEM_CAT_NUM, itemCatNum);
+            listItem.put(ParseConstants.KEY_ITEM_QTY, itemQty);
+            listItem.put(ParseConstants.KEY_ITEM_SIZE, itemSize);
+            listItem.put(ParseConstants.KEY_ITEM_COLOR, itemColor);
+        listItem.saveInBackground();
     }
+
 }
