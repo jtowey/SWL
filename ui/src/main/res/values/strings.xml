@@ -52,7 +52,7 @@
     <string name="title_section2">Friends</string>
     <string name="title_section3">Connections</string>
     <string name="title_section4">Preferences</string>
-    <string name="username_hint">Public Name</string>
+    <string name="username_hint">Name</string>
     <string name="password_hint">Password</string>
     <string name="email_hint">Email</string>
     <string name="login_label">Log in</string>
@@ -65,6 +65,8 @@
     <string name="error_title">We\'re sorry!</string>
     <string name="signup_error_message">Please make sure you enter a username, email, password, and birthdate.</string>
     <string name="signup_error_title">Oops!</string>
+    <string name="new_wish_error_message">Please make sure you enter an item name and description.</string>
+    <string name="new_wish_error_title">Oops!</string>
     <string name="login_error_title">Oops!</string>
     <string name="login_error_message">Please make sure you enter a username and password.</string>
     <string name="error_birthday">"Please enter you birth day."</string>

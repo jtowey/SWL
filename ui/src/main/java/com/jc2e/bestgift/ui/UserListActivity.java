@@ -8,8 +8,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.Window;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
@@ -59,10 +61,9 @@ public class UserListActivity extends ListActivity {
                         i++;
                     }
                     ArrayAdapter<String> adapter = new ArrayAdapter<String>(UserListActivity.this,
-                            android.R.layout.simple_expandable_list_item_1,
+                            android.R.layout.simple_list_item_1,
                             listItems);
                     setListAdapter(adapter);
-
 
                 } else {
                     Log.e(TAG, e.getMessage());
@@ -102,6 +103,14 @@ public class UserListActivity extends ListActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+        Intent intent = new Intent(UserListActivity.this, ItemDetailFragment.class);
+        startActivity(intent);
     }
 
     private void navigateToLogin() {
