@@ -2,7 +2,6 @@ package com.jc2e.bestgift.ui.model;
 
 import android.util.Log;
 
-import com.parse.ParseClassName;
 import com.parse.ParseObject;
 
 public class ListItem extends ParseObject {

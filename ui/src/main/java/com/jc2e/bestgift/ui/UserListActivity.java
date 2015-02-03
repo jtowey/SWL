@@ -1,8 +1,10 @@
 package com.jc2e.bestgift.ui;
 
-import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.app.ListActivity;
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,7 +17,6 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.parse.FindCallback;
-import com.parse.ParseClassName;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
@@ -23,7 +24,7 @@ import com.parse.ParseUser;
 
 import java.util.List;
 
-public class UserListActivity extends ListActivity {
+public class UserListActivity extends ListActivity implements ItemDetailFragment.OnItemSelectedListener {
 
     public static final String TAG = UserListActivity.class.getSimpleName();
 
@@ -40,6 +41,8 @@ public class UserListActivity extends ListActivity {
         mCurrentUser = ParseUser.getCurrentUser();
 
         setProgressBarIndeterminateVisibility(true);
+
+        FragmentManager fragmentManager = getFragmentManager();
 
 //        TODO convert to list items
         ParseQuery<ParseObject> query = ParseQuery.getQuery(ParseConstants.CLASS_LIST_ITEM);
@@ -77,7 +80,6 @@ public class UserListActivity extends ListActivity {
                 }
             }
         });
-        Toast.makeText(this, "This activity is under construction", Toast.LENGTH_LONG).show();
     }
 
 
@@ -94,8 +96,6 @@ public class UserListActivity extends ListActivity {
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
             ParseUser.logOut();
             navigateToLogin();
@@ -109,8 +109,10 @@ public class UserListActivity extends ListActivity {
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
-        Intent intent = new Intent(UserListActivity.this, ItemDetailFragment.class);
-        startActivity(intent);
+
+        itemDecsriptionInteraction(position);
+//        Intent intent = new Intent(UserListActivity.this, ItemDetailFragment.class);
+//        startActivity(intent);
     }
 
     private void navigateToLogin() {
@@ -118,5 +120,15 @@ public class UserListActivity extends ListActivity {
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intent);
+    }
+
+    public void itemDecsriptionInteraction(int position) {
+        String mPosition = String.valueOf(position);
+        Toast.makeText(this, mPosition + " " + mItems.get(position).getString(ParseConstants.KEY_ITEM_DESC) , Toast.LENGTH_SHORT).show();
+
+//        ItemDetailFragment fragment = new ItemDetailFragment();
+//        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
+//        fragmentTransaction.replace(R.id.itemContainer, fragment);
+//        fragmentTransaction.commit();
     }
 }

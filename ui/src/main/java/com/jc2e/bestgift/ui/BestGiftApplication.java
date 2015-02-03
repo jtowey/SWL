@@ -2,9 +2,7 @@ package com.jc2e.bestgift.ui;
 
 import android.app.Application;
 
-import com.jc2e.bestgift.ui.model.ListItem;
 import com.parse.Parse;
-import com.parse.ParseObject;
 
 /**
  * Created by Jtowey on 8/31/2014.

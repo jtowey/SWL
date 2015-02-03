@@ -51,21 +51,21 @@ public final class R {
     }
     public static final class id {
         public static final int HomeLabel=0x7f0a0029;
-        public static final int action_camera=0x7f0a0033;
-        public static final int action_edit_friends=0x7f0a0035;
-        public static final int action_logout=0x7f0a0032;
-        public static final int action_new_wish=0x7f0a0031;
-        public static final int action_save=0x7f0a0036;
-        public static final int action_settings=0x7f0a002f;
-        public static final int action_view_list=0x7f0a0030;
-        public static final int action_websearch=0x7f0a0034;
+        public static final int action_camera=0x7f0a0034;
+        public static final int action_edit_friends=0x7f0a0036;
+        public static final int action_logout=0x7f0a0033;
+        public static final int action_new_wish=0x7f0a0032;
+        public static final int action_save=0x7f0a0037;
+        public static final int action_settings=0x7f0a0030;
+        public static final int action_view_list=0x7f0a0031;
+        public static final int action_websearch=0x7f0a0035;
         public static final int b_day=0x7f0a001d;
         public static final int birthDay=0x7f0a001f;
         public static final int birthYear=0x7f0a0020;
         public static final int container=0x7f0a000a;
         public static final int counter=0x7f0a0023;
         public static final int drawer_layout=0x7f0a0009;
-        public static final int editBirthday=0x7f0a002d;
+        public static final int editBirthday=0x7f0a002e;
         public static final int editColor=0x7f0a0019;
         public static final int editItemNum=0x7f0a0013;
         public static final int editPrice=0x7f0a0011;
@@ -81,6 +81,7 @@ public final class R {
         public static final int forgotPassword=0x7f0a0006;
         public static final int googleLoginButton=0x7f0a0008;
         public static final int icon=0x7f0a0021;
+        public static final int itemContainer=0x7f0a002b;
         public static final int labelColor=0x7f0a0018;
         public static final int labelItemNum=0x7f0a0012;
         public static final int labelNewWish=0x7f0a000c;
@@ -94,10 +95,10 @@ public final class R {
         public static final int list_slidermenu=0x7f0a000b;
         public static final int loginButton=0x7f0a0004;
         public static final int passwordField=0x7f0a0003;
-        public static final int profileDateView=0x7f0a002c;
-        public static final int profileImageView=0x7f0a002b;
+        public static final int profileDateView=0x7f0a002d;
+        public static final int profileImageView=0x7f0a002c;
         public static final int profileNameLabel=0x7f0a0028;
-        public static final int saveButton=0x7f0a002e;
+        public static final int saveButton=0x7f0a002f;
         public static final int signupButton=0x7f0a0005;
         public static final int tab1=0x7f0a0025;
         public static final int tab2=0x7f0a0026;
@@ -119,18 +120,19 @@ public final class R {
         public static final int fragment_community=0x7f030009;
         public static final int fragment_connection=0x7f03000a;
         public static final int fragment_find_people=0x7f03000b;
-        public static final int fragment_friends=0x7f030016;
+        public static final int fragment_friends=0x7f030017;
         public static final int fragment_friends_grid=0x7f03000c;
         public static final int fragment_friends_list=0x7f03000d;
         public static final int fragment_home=0x7f03000e;
-        public static final int fragment_lists=0x7f03000f;
-        public static final int fragment_listsfragment=0x7f030017;
-        public static final int fragment_listsfragment_grid=0x7f030010;
-        public static final int fragment_listsfragment_list=0x7f030011;
-        public static final int fragment_main=0x7f030012;
-        public static final int fragment_navigation_drawer=0x7f030013;
-        public static final int fragment_photos=0x7f030014;
-        public static final int fragment_profile=0x7f030015;
+        public static final int fragment_item_detail=0x7f03000f;
+        public static final int fragment_lists=0x7f030010;
+        public static final int fragment_listsfragment=0x7f030018;
+        public static final int fragment_listsfragment_grid=0x7f030011;
+        public static final int fragment_listsfragment_list=0x7f030012;
+        public static final int fragment_main=0x7f030013;
+        public static final int fragment_navigation_drawer=0x7f030014;
+        public static final int fragment_photos=0x7f030015;
+        public static final int fragment_profile=0x7f030016;
     }
     public static final class menu {
         public static final int edit_friends=0x7f090000;

@@ -1,6 +1,8 @@
 package com.jc2e.bestgift.ui.sections;
 
 import android.app.AlertDialog;
+import android.app.Fragment;
+import android.app.FragmentManager;
 import android.app.ListFragment;
 import android.os.Bundle;
 import android.util.Log;
@@ -8,7 +10,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.jc2e.bestgift.ui.ItemDetailFragment;
 import com.jc2e.bestgift.ui.ParseConstants;
 import com.jc2e.bestgift.ui.R;
 import com.parse.FindCallback;
@@ -26,6 +30,8 @@ public class FriendsFragment extends ListFragment {
     protected List<ParseUser> mFriends;
     protected ParseRelation<ParseUser> mFriendsRelation;
     protected ParseUser mCurrentUser;
+
+    protected Fragment ItemDetailFragment;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -85,5 +91,15 @@ public class FriendsFragment extends ListFragment {
                 }
             }
         });
+    }
+
+    @Override
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
+
+
+        FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction()
+                .replace(R.id.container, ItemDetailFragment).commit();
     }
 }
