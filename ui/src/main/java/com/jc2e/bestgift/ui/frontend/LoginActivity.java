@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 
 import com.jc2e.bestgift.ui.MainActivity;
 import com.jc2e.bestgift.ui.R;
@@ -26,6 +25,7 @@ public class LoginActivity extends Activity {
 
     protected EditText mUsername;
     protected EditText mPassword;
+//    protected EditText mEmail;
     protected Button mLoginButton;
 
 
@@ -38,6 +38,7 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.activity_login);
 
 
+//        mEmail = (EditText) findViewById(R.id.usernameField);
         mUsername = (EditText) findViewById(R.id.usernameField);
         mPassword = (EditText) findViewById(R.id.passwordField);
         mLoginButton = (Button) findViewById(R.id.loginButton);
@@ -68,7 +69,8 @@ public class LoginActivity extends Activity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String username = mUsername.getText().toString().trim();     // TODO Change to Email instead of username
+                String username = mUsername.getText().toString().trim();   // TODO Change to Email instead of username
+//                String email = mEmail.getText().toString().trim();
                 String password = mPassword.getText().toString().trim();
 
                 // Check if user fields have been filled out.

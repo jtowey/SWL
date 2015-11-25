@@ -10,37 +10,38 @@
     android:id="@+id/b_day">
 
     <EditText
+        android:id="@+id/emailField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/usernameField"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/email_hint"
+        android:textAlignment="center">
+    <requestFocus />
+    </EditText>
+
+    <EditText
         android:id="@+id/usernameField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/passwordField"
         android:layout_alignParentEnd="true"
         android:hint="@string/username_hint"
-        android:textAlignment="center">
-        <requestFocus />
-    </EditText>
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/passwordField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/emailField"
+        android:layout_above="@+id/birthDay"
         android:layout_alignParentEnd="true"
         android:ems="10"
         android:inputType="textPassword"
         android:hint="@string/password_hint"
         android:textAlignment="center"/>
 
-    <EditText
-        android:id="@+id/emailField"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/birthDay"
-        android:layout_alignParentEnd="true"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="@string/email_hint"
-        android:textAlignment="center"/>
 
     <EditText
         android:layout_width="wrap_content"
