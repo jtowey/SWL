@@ -98,7 +98,7 @@ public class NewWishActivity extends Activity {
         String itemCatNum = mItemCatNum.getText().toString().trim();
         String itemQty = mItemQty.getText().toString().trim();
         String itemSize = mItemSize.getText().toString().trim();
-        String itemColor = mItemColor.getText().toString().trim();
+        String itemColor = mItemColor.getText().toString().trim(  );
 
         if (itemName.isEmpty() || itemDesc.isEmpty()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(NewWishActivity.this);

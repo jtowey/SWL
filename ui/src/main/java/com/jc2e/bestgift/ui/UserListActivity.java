@@ -8,10 +8,12 @@ import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -110,9 +112,7 @@ public class UserListActivity extends ListActivity implements ItemDetailFragment
     protected void onListItemClick(ListView l, View v, int position, long id) {
         super.onListItemClick(l, v, position, id);
 
-        itemDecsriptionInteraction(position);
-//        Intent intent = new Intent(UserListActivity.this, ItemDetailFragment.class);
-//        startActivity(intent);
+        itemDescriptionInteraction(position);
     }
 
     private void navigateToLogin() {
@@ -122,13 +122,11 @@ public class UserListActivity extends ListActivity implements ItemDetailFragment
         startActivity(intent);
     }
 
-    public void itemDecsriptionInteraction(int position) {
+    public void itemDescriptionInteraction(int position) {
         String mPosition = String.valueOf(position);
-        Toast.makeText(this, mPosition + " " + mItems.get(position).getString(ParseConstants.KEY_ITEM_DESC) , Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, mPosition + " " + mItems.get(position).getString(ParseConstants.KEY_ITEM_NAME) + " " +
+                mItems.get(position).getString(ParseConstants.KEY_ITEM_DESC) , Toast.LENGTH_SHORT).show();
 
-//        ItemDetailFragment fragment = new ItemDetailFragment();
-//        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-//        fragmentTransaction.replace(R.id.itemContainer, fragment);
-//        fragmentTransaction.commit();
     }
+
 }

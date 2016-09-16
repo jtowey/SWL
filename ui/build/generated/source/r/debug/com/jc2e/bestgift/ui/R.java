@@ -9,24 +9,24 @@ package com.jc2e.bestgift.ui;
 
 public final class R {
     public static final class array {
-        public static final int camera_choices=0x7f040000;
-        public static final int nav_drawer_icons=0x7f040001;
-        public static final int nav_drawer_items=0x7f040002;
+        public static final int camera_choices=0x7f050000;
+        public static final int nav_drawer_icons=0x7f050001;
+        public static final int nav_drawer_items=0x7f050002;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int counter_text_bg=0x7f050000;
-        public static final int counter_text_color=0x7f050001;
-        public static final int list_background=0x7f050002;
-        public static final int list_background_pressed=0x7f050003;
-        public static final int list_divider=0x7f050004;
-        public static final int list_item_title=0x7f050005;
+        public static final int counter_text_bg=0x7f060000;
+        public static final int counter_text_color=0x7f060001;
+        public static final int list_background=0x7f060002;
+        public static final int list_background_pressed=0x7f060003;
+        public static final int list_divider=0x7f060004;
+        public static final int list_item_title=0x7f060005;
     }
     public static final class dimen {
-        public static final int activity_horizontal_margin=0x7f060000;
-        public static final int activity_vertical_margin=0x7f060001;
-        public static final int navigation_drawer_width=0x7f060002;
+        public static final int activity_horizontal_margin=0x7f040000;
+        public static final int activity_vertical_margin=0x7f040001;
+        public static final int navigation_drawer_width=0x7f040002;
     }
     public static final class drawable {
         public static final int counter_bg=0x7f020000;
@@ -191,20 +191,21 @@ public final class R {
         public static final int title_activity_edit_friends=0x7f070028;
         public static final int title_activity_forgot=0x7f070029;
         public static final int title_activity_fragment=0x7f07002a;
-        public static final int title_activity_list_item=0x7f07002b;
-        public static final int title_activity_login=0x7f07002c;
-        public static final int title_activity_new_wish_actvity=0x7f07002d;
-        public static final int title_activity_signup=0x7f07002e;
-        public static final int title_activity_tab=0x7f07002f;
-        public static final int title_activity_user_list=0x7f070030;
-        public static final int title_fragment_friends=0x7f070031;
-        public static final int title_fragment_nav_drawer=0x7f070032;
-        public static final int title_section1=0x7f070033;
-        public static final int title_section2=0x7f070034;
-        public static final int title_section3=0x7f070035;
-        public static final int title_section4=0x7f070036;
-        public static final int username_hint=0x7f070037;
-        public static final int video_file_size_warning=0x7f070038;
+        public static final int title_activity_hello_world=0x7f07002b;
+        public static final int title_activity_list_item=0x7f07002c;
+        public static final int title_activity_login=0x7f07002d;
+        public static final int title_activity_new_wish_actvity=0x7f07002e;
+        public static final int title_activity_signup=0x7f07002f;
+        public static final int title_activity_tab=0x7f070030;
+        public static final int title_activity_user_list=0x7f070031;
+        public static final int title_fragment_friends=0x7f070032;
+        public static final int title_fragment_nav_drawer=0x7f070033;
+        public static final int title_section1=0x7f070034;
+        public static final int title_section2=0x7f070035;
+        public static final int title_section3=0x7f070036;
+        public static final int title_section4=0x7f070037;
+        public static final int username_hint=0x7f070038;
+        public static final int video_file_size_warning=0x7f070039;
     }
     public static final class style {
         /**  Customize your theme here. 

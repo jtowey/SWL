@@ -5,8 +5,8 @@ package com.jc2e.bestgift.ui;
  */
 public final class ParseConstants {
     // Global
-    public static final String PARSE_APPLICATION_ID = "81fP2TR7zvJer8MzOGFvbbcYqqqm0E3dM2LYqPZX";
-    public static final String PARSE_CLIENT_KEY = "AjJ52wLgtJfWQ0bWTmHPR12KAHfe18rth5civK5b";
+    public static final String PARSE_APPLICATION_ID = "best_gift346980NFAKJEGNknafg";
+    public static final String PARSE_CLIENT_KEY = "ugkdhnksuh25u2893621uKJNGL9258";
     // Class names
     public static final String CLASS_LISTS = "Lists";
     public static final String CLASS_LIST_ITEM = "ListItem";

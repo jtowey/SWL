@@ -2,7 +2,7 @@
 <resources>
 
     <string name="app_name">Best Gift</string>
-    Action Bar            <string name="action_new_wish">New Wish</string>
+    Action Bar                <string name="action_new_wish">New Wish</string>
     <string name="action_camera_label">Capture Photo</string>
     <string name="action_logout">Logout</string>
     <string name="action_settings">Settings</string>
@@ -10,7 +10,7 @@
     <string name="action_websearch">Web Search</string>
     <string name="action_edit_friends">Edit Friends</string>
     <string name="action_view_list">View Your List</string>
-    Camera            <string-array name="camera_choices">
+    Camera                <string-array name="camera_choices">
         <item>Take Picture</item>
         <item>Take Video</item>
         <item>Choose Picture</item>
@@ -21,7 +21,7 @@
     <string name="general_error">Sorry, there was an error!</string>
     <string name="video_file_size_warning">The selected video must be less than 10 MB.</string>
     <string name="error_file_size_too_large">The selected file was too large. Select a new file.</string>
-    NavDrawer            <string name="title_activity_login">Login</string>
+    NavDrawer                <string name="title_activity_login">Login</string>
     <string name="title_activity_signup">Signup</string>
     <string name="title_activity_forgot">Forgot Password</string>
     <string name="title_activity_fragment">FragmentActivity</string>
@@ -29,7 +29,7 @@
     <string name="title_activity_tab">TabActivity</string>
     <string name="title_fragment_nav_drawer">Nav Drawer</string>
     <string name="title_fragment_friends">Friends</string>
-     Nav Drawer Menu Items            <string-array name="nav_drawer_items">
+     Nav Drawer Menu Items                <string-array name="nav_drawer_items">
         <item>Home</item>
         <item>Find People</item>
         <item>Profile</item>
@@ -38,7 +38,7 @@
         <item>Lists</item>
     </string-array>
          Nav Drawer List Item Icons
-         Keep them in the same order as the titles are in            <array name="nav_drawer_icons">
+         Keep them in the same order as the titles are in                <array name="nav_drawer_icons">
         <item>@drawable/ic_home</item>
         <item>@drawable/ic_people</item>
         <item>@drawable/ic_photos</item>
@@ -83,5 +83,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_user_list">UserListActivity</string>
     <string name="title_activity_list_item">ListItem</string>
+    <string name="title_activity_hello_world">HelloWorld</string>
 
 </resources>

@@ -89,7 +89,7 @@
                 android:value="com.jc2e.bestgift.ui.MainActivity" />
         </activity>
         <activity
-            android:name="com.jc2e.bestgift.ui.NewWishActvity"
+            android:name="com.jc2e.bestgift.ui.NewWishActivity"
             android:label="@string/title_activity_new_wish_actvity"
             android:parentActivityName="com.jc2e.bestgift.ui.MainActivity" >
             <meta-data
@@ -104,10 +104,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.jc2e.bestgift.ui.MainActivity" />
         </activity>
-        <activity
-            android:name="com.jc2e.bestgift.ui.model.ListItem"
-            android:label="@string/title_activity_list_item" >
-        </activity>
+
+        <fragment
+            android:name=".ItemDetailFragment"
+            android:label="ItemDetailFragment"
+            android:parentActivityName="com.jc2e.bestgift.ui.UserListActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.jc2e.bestgift.ui.UserListActivity" />
+        </fragment>
     </application>
 
 </manifest>
